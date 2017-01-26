@@ -54,7 +54,7 @@ try{
         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">GoMato</a>
+                    <a class="navbar-brand" href="index.php">GoMato</a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li>
