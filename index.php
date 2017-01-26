@@ -26,7 +26,7 @@
         <div class="row">
             <form id="search-form" method="get" action="search.php">
                 <div class="form-group">
-                    <div class="col-xs-3">
+                    <div class="col-sm-3">
                         <select name="city_id" class="form-control" id="cityid" required>
                             <option value="" disabled selected>Select City</option>
                             <option value="7">Chennai</option>
@@ -38,10 +38,10 @@
                             <option value="6">Hyderbad</option>
                         </select>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-sm-6">
                         <input class="form-control"  name="query" type="text" placeholder="Search restaurants and Cuisines..." id="query">
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2">
                         <button class="btn btn-default"  type="submit" name="search">
                             Search <span class="glyphicon glyphicon-search"></span>
                         </button>
