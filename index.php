@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Case</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <?php
+    require_once "head.html";
+    ?>
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">GoMato</a>
-    </div><!--
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>-->
-  </div>
-</nav>
-  
-<div class="container">
-  <h3>Welcome to GoMato</h3>
-    <div class="row">
-        <form>
-    <div class="form-group">
-      <div class="col-xs-3">
-        <label for="ex1">col-xs-2</label>
-        <input class="form-control" id="ex1" type="text">
-      </div>
-      <div class="col-xs-6">
-        <label for="ex2">col-xs-3</label>
-        <input class="form-control" id="ex2" type="text">
-      </div>
-      <div class="col-xs-2">
-        <label for="ex3">col-xs-4</label>
-        <input class="form-control" id="ex3" type="text">
-      </div>
-    </div>
-  </form>
-    </div>
-</div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">GoMato</a>
+            </div><!--
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>-->
+        </div>
+    </nav>
 
+    <div class="container">
+        <h3>Welcome to GoMato</h3>
+        <div class="row">
+            <form id="search-form" method="get" action="search.php">
+                <div class="form-group">
+                    <div class="col-xs-3">
+                        <select name="city_id" class="form-control" id="cityid" required>
+                            <option value="" disabled selected>Select City</option>
+                            <option value="7">Chennai</option>
+                            <option value="4">Bangalore</option>
+                            <option value="1">Delhi</option>
+                            <option value="3">Mumbai</option>
+                            <option value="5">Pune</option>
+                            <option value="2">Kolkata</option>
+                            <option value="6">Hyderbad</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-6">
+                        <input class="form-control"  name="query" type="text" placeholder="Search restaurants and Cuisines..." id="query">
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn btn-default"  type="submit" name="search">
+                            Search <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr />
+
+    </div>
 </body>
 </html>
